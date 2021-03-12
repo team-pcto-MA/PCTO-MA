@@ -1,4 +1,9 @@
 # MA_002 Project (_Multisensor Alarm_)
+
+## _Description_
+
+## _Tools_
+
 ## _Team members_
 
 ### ___Acchiardi Paolo___:
@@ -30,6 +35,5 @@
   * _Profile: [GitHub](https://github.com/itzShekhawat)_
 
 
-## _Tools_
 
 ## _[RACI & WBS Tables](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
