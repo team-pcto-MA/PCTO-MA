@@ -27,7 +27,6 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
 ### ___Armando Yuri___:
 
   * _Roles:_  
-   *  _Pubblic Relation manager_
     * _Web sites software developer_
   * _Profile: [GitHub](https://github.com/yuriarmando)_
 ### ___Bassignana Francesco___:
