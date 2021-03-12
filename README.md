@@ -1,4 +1,4 @@
-# Progetto MA_002
+# Progetto MA_002 (_Multissensor Alarm_)
 ## _COMPONENTI DEL TEAM_
 
 ### ___Paolo Acchiardi___:
