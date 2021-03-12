@@ -1,12 +1,12 @@
 # Progetto MA_002
 ## _COMPONENTI DEL TEAM_
 
-_*Paolo Acchiardi*_:
+###___Paolo Acchiardi___:
 
-_*Luca Armando*_:
+###___Luca Armando___:
 
-_*Yuri Armando*_:
+###___Yuri Armando___:
 
-_*Francesco Bassignana*_:
+###___Francesco Bassignana___:
 
-_*Karni Singh Shekhawat*_:
+###___Karni Singh Shekhawat___:
