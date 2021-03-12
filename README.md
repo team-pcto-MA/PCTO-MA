@@ -37,3 +37,7 @@
   * _Profile: [GitHub](https://github.com/itzShekhawat)_
 
 ## _[RACI & WBS TABLES](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
+
+## _THANKS_
+
+  * _I.T.I.S Mario Delpozzo_
