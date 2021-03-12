@@ -1,10 +1,10 @@
-# MA_002 Project (_Multisensor Alarm_)
+# MA_002 PROJECT (_Multisensor Alarm_)
 
-## _Description_
+## _DESCRIPTION_
 
-## _Tools_
+## _TOOLS_
 
-## _Team members_
+## _TEAM MEMBERS_
 
 ### ___Acchiardi Paolo___:
 
@@ -36,4 +36,4 @@
 
 
 
-## _[RACI & WBS Tables](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
+## _[RACI & WBS TABLES](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
