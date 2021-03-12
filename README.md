@@ -10,8 +10,8 @@
 
   * _Roles:_  
     * _Security manager and database creator_
-    * _Documentation handler_
     * _Web server software developer_
+    * _Documentation handler_
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Armando Luca___:
 
