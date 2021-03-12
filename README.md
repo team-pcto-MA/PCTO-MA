@@ -1,4 +1,4 @@
-# Progetto MA_002 (_Multisensor Alarm_)
+# MA_002 Project (_Multisensor Alarm_)
 ## _Team members_
 
 ### ___Acchiardi Paolo___:
@@ -20,9 +20,17 @@
 
   * _Roles:_  
     * _Project manager_
+    * _Hardware manager_
+    * _Client software developer_
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
 ### ___Shekhawat Karni Singh___:
 
   * _Roles:_  
-    * _Project manager_
+    * __
   * _Profile: [GitHub](https://github.com/itzShekhawat)_
+
+
+## _Tools_
+
+## _RACI & WBS Tables_
+### [Tables](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)
