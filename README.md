@@ -2,16 +2,19 @@
 ## _Team members_
 
 ### ___Acchiardi Paolo___:
-  ...immagine...
-  
+
+  * _Roles:_  
+    * _Project manager_
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Armando Luca___:
-  ...immagine...
-  ...ruolo...
+
+  * _Roles:_  
+    * _Project manager_
   * _Profile: [GitHub](https://github.com/0lucaarmando0)_
 ### ___Armando Yuri___:
-  ...immagine...
-  ...ruolo...
+
+  * _Roles:_  
+    * _Project manager_
   * _Profile: [GitHub](https://github.com/yuriarmando)_
 ### ___Bassignana Francesco___:
 
@@ -19,6 +22,7 @@
     * _Project manager_
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
 ### ___Shekhawat Karni Singh___:
-  ...immagine...
-  ...ruolo...
+
+  * _Roles:_  
+    * _Project manager_
   * _Profile: [GitHub](https://github.com/itzShekhawat)_
