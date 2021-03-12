@@ -16,7 +16,7 @@
 ### ___Bassignana Francesco___:
 
 - Roles:  
-&nbsp;&nbsp;&nbsp;&nbsp;_Project manager:
+&nbsp;&nbsp;&nbsp;&nbsp;_Project manager:_
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
 ### ___Shekhawat Karni Singh___:
   ...immagine...
