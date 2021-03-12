@@ -32,4 +32,4 @@
 
 ## _Tools_
 
-## _RACI & WBS Tables -> [Tables](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
+## _[RACI & WBS Tables](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
