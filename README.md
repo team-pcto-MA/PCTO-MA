@@ -15,7 +15,7 @@
   * _Profile: [GitHub](https://github.com/yuriarmando)_
 ### ___Bassignana Francesco___:
   ...immagine...
-  
+
 - Roles:  
  - Project manager -  
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
