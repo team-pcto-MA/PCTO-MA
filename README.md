@@ -2,7 +2,7 @@
 ## _Team members_
 
 ### ___Paolo Acchiardi___:
-  * Profile: [GitHub](https://github.com/paoloacchiardi)
+  * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Luca Armando___:
 
 ### ___Yuri Armando___:
