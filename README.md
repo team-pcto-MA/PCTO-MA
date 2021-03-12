@@ -3,7 +3,7 @@
 
 ### ___Acchiardi Paolo___:
   ...immagine...
-  ...ruolo...
+  
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Armando Luca___:
   ...immagine...
@@ -15,7 +15,9 @@
   * _Profile: [GitHub](https://github.com/yuriarmando)_
 ### ___Bassignana Francesco___:
   ...immagine...
-  ...ruolo...
+- _Roles:_
+ - Project manager
+ - 
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
 ### ___Shekhawat Karni Singh___:
   ...immagine...
