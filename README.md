@@ -5,8 +5,8 @@
 _Our project want to increase security in a studio flat or two-room apartment. We want to create a Multisensor Alarm using some tools (scroll down to see their descriptions)._
 
 ### _How?_
-_We use a **raspberry Pi** connected to **bluetooth sensors** placed on the sides of some doors of our apartment. Every time that someone **open or close a door** the sensors signal their **change of status** by sending data to raspberry Pi._
-rasp connesso a sito web con database vari che memorizzano stato sensori. Tramite il sito web si creano utenti e immettendo una password si potrà attivare o disattivare un allarme, controllare gli stati dei sensori, effettuare òog in, log out, sign up sul sito.
+_We use a **raspberry Pi** connected to **bluetooth sensors** placed on the sides of some doors of our apartment. Every time that someone **open or close a door** the sensors signal their **change of status** by sending data to raspberry Pi.
+Raspberry Pi is connected to a website connected to sqlite database that stores some accounts, sensors, raspberry data. Through the website you can create accounts with email, password ecc., activate/deactivate an alarm, check the status of the sensors, log in, log out, sign up._
 
 ## _TOOLS_
 
