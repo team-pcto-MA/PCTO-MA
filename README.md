@@ -10,6 +10,12 @@ Raspberry Pi is connected to a website connected to sqlite database that stores 
 
 ## _TOOLS_
 
+### _Raspberry Pi 4_:
+
+<img src="documentation_img/raspberry.jpg" width="220" height="300"/>
+### _Door sensors IM20-BLE_
+
+<img src="documentation_img/door_sensors.jpg" width="220" height="300"/>
 ## _TEAM MEMBERS_
 
 ### ___Acchiardi Paolo___:
