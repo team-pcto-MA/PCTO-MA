@@ -1,5 +1,7 @@
 # MA_002 PROJECT (_Multisensor Alarm_)
 
+<img src="documentation_img/Ma_002 PROJECT.png" width="220" height="200"/>
+
 ## _DESCRIPTION_
 
 _Our project want to increase security in a studio flat or two-room apartment. We want to create a Multisensor Alarm using some tools (scroll down to see their descriptions)._
@@ -75,6 +77,12 @@ _We use them to create web sites._
   * _Profile: [GitHub](https://github.com/itzShekhawat)_
 
 ## _[RACI & WBS TABLES](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
+
+## _WORK_
+
+### _Database:_
+
+_
 
 ## _THANKS_
 
