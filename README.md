@@ -14,7 +14,7 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
 
 ### ___Acchiardi Paolo___:
 
-![Image](documentation_img/acchiardi.jpeg){height=400px width=500px}
+![Image](documentation_img/acchiardi.jpeg){height=100px width=100px}
   * _Roles:_  
     * _Security manager and database creator_
     * _Web server junior developer_
