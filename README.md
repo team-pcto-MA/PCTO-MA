@@ -82,7 +82,9 @@ _We use them to create web sites._
 
 ### _Database:_
 
-_
+_ER scheme + Mapping + Attributes table ->_
+
+_[Jamboard link](https://jamboard.google.com/d/1ax1VQDISwOU-PLbItjVOyVuyMca3kTIn3rtkyNUhazU/viewer?f=2)_
 
 ## _THANKS_
 
