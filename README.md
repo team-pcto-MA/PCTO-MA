@@ -82,9 +82,9 @@ _We use them to create web sites._
 
 ### _Database:_
 
-_ER scheme -> <img src="documentation_img/ER_scheme.PNG" width="500" height="500"/>_
+_ER scheme -> <img src="documentation_img/ER_scheme.PNG" width="700" height="500"/>_
 
-_Mapping -> <img src="documentation_img/mapping.PNG" width="500" height="500"/>_
+_Mapping -> <img src="documentation_img/mapping.PNG" width="700" height="500"/>_
 
 _Attributes Table -> <img src="documentation_img/table.PNG" width="500" height="500"/>_
 
