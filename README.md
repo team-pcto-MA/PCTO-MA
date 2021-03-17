@@ -19,16 +19,6 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
     * _Web server junior developer_
     * _Documentation handler_
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
-### ___Armando Luca___:
-
-  * _Roles:_  
-    * _Web sites software developer_
-  * _Profile: [GitHub](https://github.com/0lucaarmando0)_
-### ___Armando Yuri___:
-
-  * _Roles:_  
-    * _Web sites software developer_
-  * _Profile: [GitHub](https://github.com/yuriarmando)_
 ### ___Bassignana Francesco___:
 
   * _Roles:_  
