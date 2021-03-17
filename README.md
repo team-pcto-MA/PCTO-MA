@@ -82,7 +82,11 @@ _We use them to create web sites._
 
 ### _Database:_
 
-_ER scheme + Mapping + Attributes table -> [Jamboard link](https://jamboard.google.com/d/1ax1VQDISwOU-PLbItjVOyVuyMca3kTIn3rtkyNUhazU/viewer?f=0)_
+_ER scheme -> <img src="documentation_img/ER_scheme.png" width="220" height="200"/>_
+
+_Mapping -> <img src="documentation_img/mapping.png" width="220" height="200"/>_
+
+_Attributes Table -> <img src="documentation_img/table.png" width="220" height="200"/>_
 
 ## _THANKS_
 
