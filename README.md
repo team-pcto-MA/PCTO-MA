@@ -90,4 +90,4 @@ _Attributes Table -> <img src="documentation_img/table.PNG" width="600" height="
 
 ## _THANKS_
 
-  * _I.T.I.S Mario Delpozzo_
+  * _[I.T.I.S Mario Delpozzo](https://www.itiscuneo.gov.it/)_
