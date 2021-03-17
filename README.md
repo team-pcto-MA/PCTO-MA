@@ -86,7 +86,7 @@ _ER scheme -> <img src="documentation_img/ER_scheme.PNG" width="700" height="500
 
 _Mapping -> <img src="documentation_img/mapping.PNG" width="700" height="300"/>_
 
-_Attributes Table -> <img src="documentation_img/table.PNG" width="500" height="500"/>_
+_Attributes Table -> <img src="documentation_img/table.PNG" width="600" height="500"/>_
 
 ## _THANKS_
 
