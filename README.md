@@ -14,7 +14,7 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
 
 ### ___Acchiardi Paolo___:
 
-![Image][team-pcto-MA/PCTO-MA/documentation_img/acchiardi.jpeg]
+![Image][https://github.com/team-pcto-MA/PCTO-MA/blob/main/documentation_img/acchiardi.jpeg]
   * _Roles:_  
     * _Security manager and database creator_
     * _Web server junior developer_
