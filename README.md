@@ -14,9 +14,13 @@ Raspberry Pi is connected to a website connected to sqlite database that stores 
 
 <img src="documentation_img/raspberry.jpg" width="220" height="200"/>
 
+_Is a Microprocessor that has a personal OS called "Raspberry Pi OS" or "Raspbian". We use it as a client to manage sensors._
+
 ### _Door sensors IM20-BLE:_
 
 <img src="documentation_img/door_sensors.jpg" width="220" height="200"/>
+
+_They are bluetooth sensor that we place on doors. They can send alarm report, tamper report, battery level status and heartbeat report._
 
 ## _TEAM MEMBERS_
 
