@@ -24,11 +24,19 @@ _They are bluetooth sensor that we place on doors. They can send alarm report, t
 
 ### _Sqlite_
 
+<img src="documentation_img/sqlite.png" width="220" height="200"/>
+
 ### _Javascript_
+
+<img src="documentation_img/javascript.png" width="220" height="200"/>
 
 ### _Python_
 
+<img src="documentation_img/python.png" width="220" height="200"/>
+
 ### _Html & css_
+
+<img src="documentation_img/html_css.png" width="220" height="200"/>
 
 ## _TEAM MEMBERS_
 
