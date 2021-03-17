@@ -22,6 +22,14 @@ _Is a Microprocessor that has a personal OS called "Raspberry Pi OS" or "Raspbia
 
 _They are bluetooth sensor that we place on doors. They can send alarm report, tamper report, battery level status and heartbeat report._
 
+### _Sqlite_
+
+### _Javascript_
+
+### _Python_
+
+### _Html & css_
+
 ## _TEAM MEMBERS_
 
 ### ___Acchiardi Paolo:___
