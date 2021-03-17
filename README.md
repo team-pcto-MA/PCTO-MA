@@ -1,6 +1,6 @@
 # MA_002 PROJECT (_Multisensor Alarm_)
 
-<img src="documentation_img/Ma_002 PROJECT.png" width="220" height="200"/>
+<img src="documentation_img/Ma_002 PROJECT.png" width="400" height="200"/>
 
 ## _DESCRIPTION_
 
