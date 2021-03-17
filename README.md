@@ -23,7 +23,7 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Bassignana Francesco___:
 
-<img src="documentation_img/ìbassignana.jpeg" width="220" height="300"/>  
+<img src="documentation_img/bassignana.jpeg" width="220" height="300"/>  
 
   * _Roles:_  
     * _Project manager_
@@ -32,7 +32,7 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
 ### ___Shekhawat Karni Singh___:
 
-<img src="documentation_img/shekhawat.jpeg" width="220" height="300"/>  
+<img src="documentation_img/shekhawat.jpeg" width="300" height="300"/>  
 
   * _Roles:_  
     * _Web server developer_
