@@ -22,21 +22,29 @@ _Is a Microprocessor that has a personal OS called "Raspberry Pi OS" or "Raspbia
 
 _They are bluetooth sensor that we place on doors. They can send alarm report, tamper report, battery level status and heartbeat report._
 
-### _Sqlite_
+### _Sqlite:_
 
 <img src="documentation_img/sqlite.png" width="220" height="200"/>
 
-### _Javascript_
+_We use it to create database._
+
+### _Javascript:_
 
 <img src="documentation_img/javascript.png" width="220" height="200"/>
 
-### _Python_
+_We use it to manage sensors on raspberry Pi 4 and to communicate with web server._
+
+### _Python:_
 
 <img src="documentation_img/python.png" width="220" height="200"/>
 
-### _Html & css_
+_We use it to create web server._
+
+### _Html & css:_
 
 <img src="documentation_img/html_css.png" width="220" height="200"/>
+
+_We use them to create web sites._
 
 ## _TEAM MEMBERS_
 
