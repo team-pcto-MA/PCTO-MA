@@ -23,7 +23,7 @@ rasp connesso a sito web con database vari che memorizzano stato sensori. Tramit
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Bassignana Francesco___:
 
-<img src="documentation_img/bassignana.jpeg" width="220" height="300"/>  
+<img src="documentation_img/bassignana.jpeg" width="250" height="300"/>  
 
   * _Roles:_  
     * _Project manager_
