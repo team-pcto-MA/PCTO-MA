@@ -59,6 +59,13 @@ _We use them to create web sites._
     * _Web server junior developer_
     * _Documentation handler_
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
+### ___Agbonson Fabrizio:___
+
+<img src="documentation_img/agbonson.jpeg" width="300" height="280"/>  
+
+  * _Roles:_  
+    * _Front-end developer_
+  * _Profile: [GitHub](https://github.com/smilefabri)_
 ### ___Bassignana Francesco:___
 
 <img src="documentation_img/bassignana.jpeg" width="300" height="280"/>  
@@ -68,13 +75,7 @@ _We use them to create web sites._
     * _Hardware manager_
     * _Client developer_
   * _Profile: [GitHub](https://github.com/francescoBassi2002)_
-### ___Shekhawat Karni Singh:___
 
-<img src="documentation_img/shekhawat.jpeg" width="300" height="250"/>  
-
-  * _Roles:_  
-    * _Web server developer_
-  * _Profile: [GitHub](https://github.com/itzShekhawat)_
 
 ## _[RACI & WBS TABLES](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
 
