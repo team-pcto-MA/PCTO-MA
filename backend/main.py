@@ -4,7 +4,7 @@ from datetime import timedelta
 #TODO:
 #AGGIUNGERE 'AGGIUNGI RSPI' ALL'HTML
 #AGGIUNGERE REGISTRAZIONE PER UTENTI
-#NUOVO COMMENTINO
+#NUOVO COMMENTINO BELLO
 app = create_main()
 
 @app.route('/' , methods=['GET'])
