@@ -1,0 +1,23 @@
+{
+  "name": "rspi",
+  "version": "1.0.0",
+  "description": "Parte client rspi",
+  "main": "client.js",
+  "scripts": {
+    "start": "nodemon client.js"
+  },
+  "author": "Bassi",
+  "license": "ISC",
+  "dependencies": {
+    "d3": "^6.6.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "gyp": "^0.5.0",
+    "noble": "^1.9.1",
+    "node-beacon-scanner": "0.0.2",
+    "nodemailer": "^6.5.0",
+    "socket.io": "^4.0.1",
+    "socket.io-client": "^4.0.1",
+    "superagent": "^6.1.0"
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='./css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="py-5 text-center bg-dark w-100">
+      <div id="title"></div>
+      <div id="control">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="insert mode here"
+            id="mode"
+            class="form-control m-3 r-3"
+          />
+        </div>
+        <div class="form-group">
+          <button type="button" class="btn btn-primary" id="btnchangemode">
+            Send mode
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="sensors"
+        class="container mx-auto col-md-6 col-10 p-3 bg-white"
+      ></div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const url = new URL(window.location.href);
+      const pathlist = url.pathname.split("/");
+      console.log(pathlist);
+
+      const user = pathlist[2];
+      const mac = pathlist[3];
+      $("#btnchangemode").click(async () => {
+        const mode = document.getElementById("mode").value;
+
+        const resdb = await fetch(`${url.origin}/RSPi/changeMode`, {
+          method: "POST",
+          body: JSON.stringify({ mac: mac, mode: mode }),
+        });
+        const resj1 = await resdb.json();
+        console.log(`stauts : ${resj1.status} , message: ${resj1.message}`);
+
+        const res = await fetch("/RSPi/sendMode", {
+          method: "POST",
+          body: JSON.stringify({ mac: mac, mode: mode }),
+        });
+        const resText = await res.text();
+        if (resText == "not ok") {
+          alert("something went wrong");
+        } else {
+          alert("mode sent");
+        }
+      });
+
+      $(document).ready(async () => {
+        $("#title").append(
+          `<h1 class="text-primary">Welcome in raspberry ${mac}</h2>`
+        );
+
+        try {
+          const res2 = await fetch(`${url.origin}/log/lastLogs?mac=${mac}`);
+          const resj2 = await res2.json();
+          console.log(resj2);
+
+          if (resj2.status == "200") {
+            const data = resj2.data;
+
+            if (data && data.length != 0) {
+              for (log of data) {
+                console.log("dati esistenti");
+                $("#sensors").append(
+                  `<h3>- <a>${log.deviceID}</a>, ${log.event} , ${log.whenEvent} </h3>`
+                );
+              }
+            } else {
+              $("#sensors").append(
+                `<h3>This rspi doesn't have any sensor</h3>`
+              );
+            }
+          } else {
+            alert(`${resj2.status} : ${resj2.message}`);
+          }
+        } catch (err) {
+          console.log(`err: ${err}`);
+        }
+      });
+    </script>
+  </body>
+</html>
