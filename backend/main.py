@@ -1,10 +1,7 @@
 from ApiFolder import create_main, socketio
 from flask import redirect, request,session
 from datetime import timedelta
-#TODO:
-#AGGIUNGERE 'AGGIUNGI RSPI' ALL'HTML
-#AGGIUNGERE REGISTRAZIONE PER UTENTI
-#NUOVO COMMENTO
+
 app = create_main()
 
 @app.route('/' , methods=['GET'])
