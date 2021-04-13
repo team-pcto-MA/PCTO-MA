@@ -43,7 +43,7 @@ def user(user):
                 return render_template('user.html')
             else:
                 
-                return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro furbetto')
+                return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro')
 
         else:
             
@@ -72,7 +72,7 @@ def rspi(user, rspi):
                     return render_template('error.html' , status='404' , message='you are not the owner of this rspi')   
             else:
                   
-                return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro furbetto')
+                return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro')
         else:   
             return render_template('error.html', status = '404' , message='utente inesistente')
 
