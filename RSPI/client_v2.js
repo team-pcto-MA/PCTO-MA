@@ -36,6 +36,8 @@ socket.on("desconnect", (reason) => {
 socket.on("connect", () => {
   console.log("connected");
 
+  socket.emit("newrspi", MAC);
+
   setTimeout(() => {
     //after logging wait 3 second, in this 3 second those lines can't be executed (if->line 28), after this timeout those lines can be executed (cond=true)
 
