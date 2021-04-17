@@ -145,6 +145,9 @@ def login():
             session['logged'] = True
             session['user'] = username
 
+            print(f"session user: {session['user']}")
+            print(f"session: {session}")
+
             return jsonify({
                 'status' : '200',
                 'message' : 'done'
@@ -163,23 +166,7 @@ def login():
         })
 
 
-@user.route('/loginJson' , methods = ['POST','GET'])
 
-
-@user.route('/secret' , methods = ['POST', 'GET'])
-def secret():
-    if request.method == 'GET':
-        if session.get('logged'):
-            return f"<h1>Secret page {session['user']}</h1>"
-        else:
-            return "<h1>not logged</h1>"
-
-    else:
-
-        return jsonify({
-            'status' : '404', 
-            'message' : 'bad request method'
-        })
 
 @user.route('/logOut' , methods = ['POST', 'GET'])
 def clearSession():

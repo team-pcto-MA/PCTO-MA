@@ -93,5 +93,15 @@ class DbRSPi:
             print(f'error: {E}')
             return None
 
+    def updateName(self , mac, name):
+        try:
+            cursore = self.conn.cursor()
+            print(f"UPDATE RSPi SET name = '{name}' WHERE mac = '{mac}' ")
+            cursore.execute(f"UPDATE RSPi SET name = '{name}' WHERE mac = '{mac}' ")
+            self.conn.commit()
+            return True
+        except:
+            return False
+
     def destroy(self):
         self.conn.close()

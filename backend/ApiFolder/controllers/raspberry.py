@@ -186,6 +186,38 @@ def add():
             })
 
 
+@RSPi.route('/setName' , methods = ['PATCH'])
+def setName():
+    mac = request.get_json(force = True)['mac']
+    name = request.get_json(force = True)['name']
+    ownerName = request.get_json(force = True)['ownerName']
+    RSPI = DbRSPi()
+    print(session)
+    if session:
+
+        if RSPI.existWithOwner(mac , ownerName):
+            try:
+                RSPI.updateName(mac,name)
+                return jsonify({
+                    'status' : '200',
+                    'message' : 'succesfully changed name!'
+                })
+            except sq.Error as E:
+                print(f'error : {E}')
+                return jsonify({
+                    'status' : '500',
+                    'message' : 'something went wrong!'
+                })
+        else:
+            return jsonify({
+                    'status' : '400',
+                    'message' : "you can't change the nema of a rspi that you not got"
+                }) 
+    else:
+        return jsonify({
+                    'status' : '400',
+                    'message' : "you're not logged"
+                }) 
 
 
 
