@@ -37,10 +37,21 @@
                   required="required"
                 />
               </div>
+              <div class="form-group">
+                <label for="form16" class="text-info">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  name="psw"
+                  placeholder="password here"
+                  required="required"
+                />
+              </div>
 
               <button
                 type="button"
-                onclick="reg('{{user}}')"
+                onclick="reg()"
                 class="btn btn-primary w-25"
               >
                 register
@@ -100,25 +111,54 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const reg = (user) => {
-        const data = { user: user, mac: document.getElementById("mac").value };
-        console.log(data);
+      const url = new URL(window.location.href);
 
-        fetch("/RSPi", {
+      const user = url.pathname.split("/")[2];
+      console.log(user);
+
+      const reg = () => {
+        const psw = $("#psw").val();
+
+        datas = { user: user, psw: psw };
+        console.log(datas);
+        fetch("/user/login", {
           method: "POST",
-          body: JSON.stringify(data),
+          body: JSON.stringify(datas),
         })
           .then((res) => res.json())
           .then((res) => {
-            let message = "";
-            if (res.message.startsWith("UNIQUE")) {
-              message = "this mac already exist";
-            } else if (res.message.startsWith("CHECK")) {
-              message = "invalid mac format";
+            console.log(res);
+            if (res.message == "done") {
+              console.log("ciao");
+              //__________________________________________________
+              const data = {
+                user: user,
+                mac: document.getElementById("mac").value,
+              };
+              console.log(data);
+
+              fetch("/RSPi", {
+                method: "POST",
+                body: JSON.stringify(data),
+              })
+                .then((res) => res.json())
+                .then((res) => {
+                  let message = "";
+                  if (res.message.startsWith("UNIQUE")) {
+                    message = "this mac already exist";
+                  } else if (res.message.startsWith("CHECK")) {
+                    message = "invalid mac format";
+                  } else {
+                    message = res.message;
+                  }
+                  alert(`${res.status} , ${message}`);
+                });
             } else {
-              message = res.message;
+              alert("invalid credentials");
             }
-            alert(`${res.status} , ${message}`);
+          })
+          .catch((err) => {
+            console.log(err);
           });
       };
     </script>

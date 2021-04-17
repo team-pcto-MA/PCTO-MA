@@ -27,7 +27,7 @@ def index():
                     User.destroy()
                     return jsonify({
                         'status' : '200',
-                        'info' : dictionary
+                        'data' : dictionary
                     })
                 except:
                     return jsonify({
@@ -132,8 +132,12 @@ def index():
 @user.route('/login' , methods = ['POST','GET'])
 def login():
     if request.method == 'POST':
-        username = request.form['user'] 
-        psw = request.form['psw'] 
+        try:  #se inviati da un form
+            username = request.form['user'] 
+            psw = request.form['psw'] 
+        except:  #se non inviati da un form
+            username = request.get_json(force=True)['user'] 
+            psw = request.get_json(force=True)['psw'] 
 
         User = DbUsers()
         if User.login(hashlib.md5(psw.encode()).hexdigest() , username):
@@ -157,6 +161,9 @@ def login():
         'status' : '400', 
         'message' : 'bad request method'
         })
+
+
+@user.route('/loginJson' , methods = ['POST','GET'])
 
 
 @user.route('/secret' , methods = ['POST', 'GET'])
