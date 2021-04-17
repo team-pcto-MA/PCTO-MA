@@ -3,11 +3,25 @@ from flask import redirect, request,session
 from datetime import timedelta
 
 app = create_main()
-
+rspi = []
 @app.route('/' , methods=['GET'])
 def main():
     if request.method == 'GET':
         return redirect('view')
+
+
+@socketio.on('newrspi')
+def connect(mac):
+    print(f'NUOVO CLIENT CON MAC : {mac}')
+    rspi.append({request.sid : mac})
+    print(rspi)
+
+
+@socketio.on('desconnect')
+def desconnect():
+    print(f'{request.sid} DISCONNESSO')
+    del rspi[request.sid]
+    print(rspi)
 
 
 @app.before_request
