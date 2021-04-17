@@ -40,7 +40,7 @@ def user(user):
         if User.found(user):
             if session['user'] == user:
             
-                return render_template('welcome_2.html')
+                return render_template('userPage.html')
             else:
                 
                 return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro')
