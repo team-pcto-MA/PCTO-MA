@@ -8,6 +8,71 @@ body{
   margin: 0;
 }
 
+
+.tabs {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:600px;
+  height:350px;
+  background:#eee;
+  overflow:hidden;
+  box-shadow:2px 2px 5px 2px #ccc;
+  display:flex;
+}
+.tabs .tab-header {
+  width:150px;
+}
+.tabs .tab-header > div {
+  width:100%;
+  height:calc(100% / 4);
+  background:#ddd;
+  text-indent:20px;
+  color:#888;
+  font-weight:600;
+  font-size:14px;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  border-left:5px solid #ddd;
+  cursor:pointer;
+  transition:all 200ms ease-in-out;
+}
+.tabs .tab-header > div.active {
+  border-left:5px solid #00acee;
+  color:#00acee;
+  background:#eee;
+}
+.tabs .tab-content {
+  padding:20px 30px;
+  flex:1;
+  position:relative;
+}
+.tabs .tab-content > div {
+  position:absolute;
+  top:-50vh;
+  left:100px;
+  opacity:0;
+  width:calc(100% - 40px);
+  transition:opacity 200ms ease-in-out 0ms,
+             left 300ms ease-in-out 0ms,
+             top 0ms ease-in-out 3000ms;
+}
+.tabs .tab-content > div.active {
+  top:20px;
+  left:20px;
+  opacity:1;
+  transition:opacity 200ms ease-in-out 0ms,
+             left 300ms ease-in-out 0ms,
+             top 0ms ease-in-out 0ms;
+}
+
+
+
+
+
+
 .sidebar {
   position: fixed;
   width: 25%;
