@@ -13,11 +13,11 @@ def main():
 @socketio.on('newrspi')
 def connect(mac):
     print(f'NUOVO CLIENT CON MAC : {mac}')
-    rspi.append({request.sid : mac})
+    rspi.append({mac : request.sid})
     print(rspi)
 
 
-@socketio.on('desconnect')
+@socketio.on('disconnect')
 def desconnect():
     print(f'{request.sid} DISCONNESSO')
     del rspi[request.sid]
