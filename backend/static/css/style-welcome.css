@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html {
+  font-family: Arial;
+  font-size: 16px;
+  background: #52b788d0;
+}
+body{
+  margin: 0;
+}
+
+.sidebar {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: rgba(41, 50, 53, 1);
+  font-size: 0.65em;
+}
+
+.nav {
+  position: relative;
+  margin: 0 15%;
+  text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav ul li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+  color: white;
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #52b788, #25d684);
+}
+
+.twitter {
+  position: relative;
+  width: 75%;
+  float: right;
+  height: 100vh;
+ 
+}
+.twitter .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.twitter a {
+  position: relative;
+}
+.twitter a img {
+  width: 48px;
+  height: 48px;
+}
+.twitter p {
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14.5px;
+  line-height: 1.4em;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container_2 {
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  padding: 0.9em;
+  display: flex;
+  justify-content: center;
+}
+
+.card_2 {
+  margin: 0.9em;
+  height: 15em;
+  max-width: 45em;
+  flex: 1 1 auto;
+  display: flex;
+  background-color: rgba(41, 50, 53, 1);
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+}
+.card_2 img {
+  height: 100%;
+  max-width: 19.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: 1 1 auto;
+}
+
+.card-body_2 {
+  width: 12em;
+  max-height: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  padding: 1.8em;
+}
+.card-body_2 button {
+  min-width: 8.3em;
+  flex: none;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.6em 1.2em;
+  font-size: 0.92em;
+  color: white;
+  background: none;
+  border: 0.5px solid #777;
+  border-radius: 2px;
+}
+.card-body_2 button:hover {
+  border-color: #52b788d0;
+}
+
+.card-text_2 {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 0.8em 0;
+  padding: 0;
+}
+.card-text_2 h3, .card-text p {
+  margin-top: 0;
+}
+.card-text_2:after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 2.8em;
+  /*background: linear-gradient(rgba(255, 255, 255, 0), white);*/
+}
+
+a {
+  color: #d07777;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .card_2 {
+    margin: 0.7826086957em;
+  }
+  .car_2 img {
+    max-width: 18em;
+  }
+}
+@media (max-width: 870px) {
+  .card_2 {
+    max-width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .container_2 {
+    flex-flow: column nowrap;
+    padding: 0;
+  }
+
+  .card_2 {
+    margin: 0.75em 1.1em;
+    height: 15em;
+    flex: 1 1 auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+  }
+  .card_2 img {
+    max-width: 45%;
+  }
+}
+
+
+#popup{
+ 
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(41, 50, 53, 1);
+  
+  height: 85%;
+  width: 80%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ;
+}
+#popup.active{
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ;
+}
