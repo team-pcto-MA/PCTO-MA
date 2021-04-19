@@ -7,18 +7,29 @@ html {
 body{
   margin: 0;
 }
+* {
+  box-sizing:border-box;
+}
+body {
+  background:#ccdcef;
+  font-family:"Raleway",sans-serif;
+}
 
 
 .tabs {
   position:absolute;
+
+
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
   width:600px;
   height:350px;
-  background:#eee;
+  background:rgba(41, 50, 53, 1);
   overflow:hidden;
-  box-shadow:2px 2px 5px 2px #ccc;
+  height: 100%;
+  width: 100%;
+  box-shadow:2px 2px 5px 2px rgba(41, 50, 53, 1);
   display:flex;
 }
 .tabs .tab-header {
@@ -27,7 +38,7 @@ body{
 .tabs .tab-header > div {
   width:100%;
   height:calc(100% / 4);
-  background:#ddd;
+  background:rgb(53, 64, 68);
   text-indent:20px;
   color:#888;
   font-weight:600;
@@ -35,14 +46,14 @@ body{
   text-transform:uppercase;
   display:flex;
   align-items:center;
-  border-left:5px solid #ddd;
+  border-left:5px solid #3f8b68d0;
   cursor:pointer;
   transition:all 200ms ease-in-out;
 }
-.tabs .tab-header > div.active {
-  border-left:5px solid #00acee;
-  color:#00acee;
-  background:#eee;
+.tabs .tab-header > div.active_2 {
+  border-left:5px solid #52b788d0;
+  color:#52b788d0;
+  background:rgba(41, 50, 53, 1);
 }
 .tabs .tab-content {
   padding:20px 30px;
@@ -59,7 +70,7 @@ body{
              left 300ms ease-in-out 0ms,
              top 0ms ease-in-out 3000ms;
 }
-.tabs .tab-content > div.active {
+.tabs .tab-content > div.active_2 {
   top:20px;
   left:20px;
   opacity:1;
@@ -67,6 +78,12 @@ body{
              left 300ms ease-in-out 0ms,
              top 0ms ease-in-out 0ms;
 }
+
+
+
+
+
+
 
 
 
@@ -290,7 +307,6 @@ a:hover {
 
 
 #popup{
- 
   position: fixed;
   top:50%;
   left:50%;
@@ -298,7 +314,7 @@ a:hover {
   width: 600px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
   background: rgba(41, 50, 53, 1);
-  
+  overflow: auto;
   height: 85%;
   width: 80%;
   visibility: hidden;
@@ -310,4 +326,25 @@ a:hover {
   visibility: visible;
   opacity: 1;
   transition: 0.5s ;
+}
+
+
+#button-close{
+  z-index: 0;
+  display: block;
+  left: 95%;
+  position: relative;
+  top:15px;
+  padding: 0;
+  border: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #53cc94;
+}
+
+button#button-close:hover{
+  background-color: #4eb886;
+  transform: scale(0.9);
+  
 }
