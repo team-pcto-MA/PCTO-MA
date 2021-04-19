@@ -6,8 +6,14 @@ const card = $('#rspi').text();
 function togglePopup() {
   var popup = document.getElementById('popup');
   popup.classList.toggle('active');
+
+
 }
 //_______________________________________________________________________________
+
+      
+
+
 
 $(document).ready(async () => {
   console.log('ready');
@@ -82,3 +88,4 @@ $('#userInfo').click(async () => {
   } else {
   }
 });
+
