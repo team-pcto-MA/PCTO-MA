@@ -29,6 +29,16 @@ $(document).ready(async () => {
       );
     }
   }
+
+  const child = $('#s_list').children();
+  /*  
+  child.each((idx, el) => {
+    el.click(() => {
+      el.attr('class', 'active');
+      el.siblings().attr('class', '');
+    });
+  });
+  */
 });
 
 //_______________________________________________________________________________
