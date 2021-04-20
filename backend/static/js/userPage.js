@@ -3,17 +3,9 @@ const vett = url.pathname.split('/');
 const user = vett[2];
 const card = $('#rspi').text();
 
-function togglePopup() {
-  var popup = document.getElementById('popup');
-  popup.classList.toggle('active');
-
-
-}
 //_______________________________________________________________________________
 
-      
-
-
+const sensors = async () => {};
 
 $(document).ready(async () => {
   console.log('ready');
@@ -46,7 +38,11 @@ $(document).ready(async () => {
   });
   */
 });
-
+const togglePopup = (mac) => {
+  console.log(mac);
+  var popup = document.getElementById('popup');
+  popup.classList.toggle('active');
+};
 //_______________________________________________________________________________
 $('#logout').click(async () => {
   console.log('ciao');
@@ -98,4 +94,3 @@ $('#userInfo').click(async () => {
   } else {
   }
 });
-
