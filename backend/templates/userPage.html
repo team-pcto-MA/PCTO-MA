@@ -35,103 +35,19 @@
 
     <div id="popup">
       <div class="tabs">
-        <div class="tab-header">
-<<<<<<< HEAD
+        <div class="tab-header" id="sensors">
           <div class="active_2">Sensor_1</div>
-          <div>Sensor_2</div>
-          <div>sensor_3</div>
-          <div>Sensor_2</div>
-          <div>sensor_3</div>
-          <div>Sensor_2</div>
-          <div>sensor_3</div>
-          <div>Sensor_2</div>
-          <div>sensor_3</div>
-        </div>
-        <div class="tab-content">
-          <div class="active_2">
-            <h2>Sensor_1</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              quam aspernatur architecto rerum quia repellendus, optio numquam,
-              iusto temporibus est ut facilis esse aliquid aliquam ducimus!
-              Commodi reiciendis quidem aliquid.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              fuga deserunt soluta exercitationem consectetur voluptate
-              assumenda, eligendi totam vel voluptates quia accusamus, facere
-              reprehenderit nostrum blanditiis eius aliquam impedit ipsum.
-            </p>
-          </div>
-          <div>
-            <h2>Sensor_2</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              quam aspernatur architecto rerum quia repellendus, optio numquam,
-              iusto temporibus est ut facilis esse aliquid aliquam ducimus!
-              Commodi reiciendis quidem aliquid.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              fuga deserunt soluta exercitationem consectetur voluptate
-              assumenda, eligendi totam vel voluptates quia accusamus, facere
-              reprehenderit nostrum blanditiis eius aliquam impedit ipsum.
-            </p>
-          </div>
-          <div>
-            <h2>sensor_3</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-              quam aspernatur architecto rerum quia repellendus, optio numquam,
-              iusto temporibus est ut facilis esse aliquid aliquam ducimus!
-              Commodi reiciendis quidem aliquid.
-            </p>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              fuga deserunt soluta exercitationem consectetur voluptate
-              assumenda, eligendi totam vel voluptates quia accusamus, facere
-              reprehenderit nostrum blanditiis eius aliquam impedit ipsum.
-            </p>
-          </div>
-=======
-          <div class="active_2">
-            Sensor_1
-          </div>
-          <div>
-            Sensor_2
-          </div>
-          <div>
-            sensor_3
-          </div>
-          <div>
-            sensor_3
-          </div>
-          <div>
-            sensor_3
-          </div>
+          <div class="">Sensor_2</div>
+          <div class="">sensor_3</div>
+          <div class="">sensor_3</div>
+          <div class="">sensor_3</div>
 
           <!--qua devi aggiungere il titolo del tab!-->
-
         </div>
-        <div class="tab-content">
-          <div class="active_2">
-            <h2>Sensor_1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam aspernatur architecto rerum quia repellendus, optio numquam, iusto temporibus est ut facilis esse aliquid aliquam ducimus! Commodi reiciendis quidem aliquid.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga deserunt soluta exercitationem consectetur voluptate assumenda, eligendi totam vel voluptates quia accusamus, facere reprehenderit nostrum blanditiis eius aliquam impedit ipsum.</p>
-          </div>
-          <div>
-            <h2>Sensor_2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam aspernatur architecto rerum quia repellendus, optio numquam, iusto temporibus est ut facilis esse aliquid aliquam ducimus! Commodi reiciendis quidem aliquid.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga deserunt soluta exercitationem consectetur voluptate assumenda, eligendi totam vel voluptates quia accusamus, facere reprehenderit nostrum blanditiis eius aliquam impedit ipsum.</p>
-          </div>
-          <div>
-            <h2>sensor_3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quam aspernatur architecto rerum quia repellendus, optio numquam, iusto temporibus est ut facilis esse aliquid aliquam ducimus! Commodi reiciendis quidem aliquid.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat fuga deserunt soluta exercitationem consectetur voluptate assumenda, eligendi totam vel voluptates quia accusamus, facere reprehenderit nostrum blanditiis eius aliquam impedit ipsum.</p>
-          </div>
+        <div class="tab-content" id="logs">
           <!--qua devi aggiungere il testo del tab! dentro il div tab-content e non devi copiare tutto -->
 
->>>>>>> 68d54d22ef3e49d5570f49292764e1a7959523fe
+          >>>>>>> 68d54d22ef3e49d5570f49292764e1a7959523fe
         </div>
       </div>
 
@@ -147,7 +63,7 @@
           <div class="card-text_2">
             <h3>Raspberry Id: %mac%</h3>
           </div>
-          <button onclick="togglePopup()">Sensor...</button>
+          <button onclick="togglePopup('%mac%')">Sensor...</button>
         </div>
       </div>
     </script>
@@ -159,24 +75,6 @@
     ></script>
 
     <script src="{{ url_for('static', filename='./js/userPage.js') }}"></script>
-    <script>
-      let tabHeaders = document.querySelectorAll("div");
-      let tabContents = document.querySelectorAll(
-        ".popup .tabs .tab-content > div"
-      );
-
-      for (let i = 0; i < tabHeaders.length; i++) {
-        tabHeaders[i].addEventListener("click", function () {
-          document
-            .querySelector(".tabs .tab-header > .active_2")
-            .classList.remove("active_2");
-          tabHeaders[i].classList.add("active_2");
-          document
-            .querySelector(".tabs .tab-content > .active_2")
-            .classList.remove("active_2");
-          tabContents[i].classList.add("active_2");
-        });
-      }
-    </script>
+    <script></script>
   </body>
 </html>
