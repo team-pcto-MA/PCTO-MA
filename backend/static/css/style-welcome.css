@@ -33,6 +33,7 @@ body {
   display:flex;
 }
 .tabs .tab-header {
+  overflow: auto;
   width:150px;
 }
 .tabs .tab-header > div {
