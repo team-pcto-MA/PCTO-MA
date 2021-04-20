@@ -39,8 +39,17 @@ def user(user):
         print(User.found(user))
         if User.found(user):
             if session['user'] == user:
+
+                
+
+                
+                RSPi = DbRSPi()
+                rspis = RSPi.getAll(user)
+                
+                
+
             
-                return render_template('userPage.html')
+                return render_template('userPage.html' , rspi = rspis)
             else:
                 
                 return render_template('error.html', status = '404' , message='non cercare di accedere alle paigne di qualcun altro')

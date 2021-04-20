@@ -28,6 +28,20 @@
         <div class="container">
           <div class="container_2" id="contenitore">
             <!--  CARD RSPI   -->
+            {% for a in rspi %}
+            <div class="card_2">
+              <img
+                src="{{ url_for('static', filename='./image/RPi-Logo-PRINT.png') }}"
+              />
+              <div class="card-body_2">
+                <div class="card-text_2">
+                  <h3>Raspberry Id: {{a.mac}}</h3>
+                </div>
+                <button onclick="togglePopup('{{a.mac}}')">Sensor...</button>
+              </div>
+            </div>
+            {% endfor %}
+            <!-- ______________________________-       -->
           </div>
         </div>
       </section>
@@ -54,19 +68,7 @@
       <button id="button-close" onclick="togglePopup()">Close</button>
     </div>
 
-    <script type="text/html" id="rspi">
-      <div class="card_2">
-        <img
-          src="{{ url_for('static', filename='./image/RPi-Logo-PRINT.png') }}"
-        />
-        <div class="card-body_2">
-          <div class="card-text_2">
-            <h3>Raspberry Id: %mac%</h3>
-          </div>
-          <button onclick="togglePopup('%mac%')">Sensor...</button>
-        </div>
-      </div>
-    </script>
+    <script type="text/html" id="rspi"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
