@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script>
-      let tabHeaders = document.querySelectorAll("div");
-      let tabContents = document.querySelectorAll(
-        ".popup .tabs .tab-content > div"
-      );
-
-      for (let i = 0; i < tabHeaders.length; i++) {
-        tabHeaders[i].addEventListener("click", function () {
-          document
-            .querySelector(".tabs .tab-header > .active_2")
-            .classList.remove("active_2");
-          tabHeaders[i].classList.add("active_2");
-          document
-            .querySelector(".tabs .tab-content > .active_2")
-            .classList.remove("active_2");
-          tabContents[i].classList.add("active_2");
-        });
-      }
-    </script>
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -139,5 +119,24 @@
     ></script>
 
     <script src="{{ url_for('static', filename='./js/userPage.js') }}"></script>
+    <script>
+      let tabHeaders = document.querySelectorAll("div");
+      let tabContents = document.querySelectorAll(
+        ".popup .tabs .tab-content > div"
+      );
+
+      for (let i = 0; i < tabHeaders.length; i++) {
+        tabHeaders[i].addEventListener("click", function () {
+          document
+            .querySelector(".tabs .tab-header > .active_2")
+            .classList.remove("active_2");
+          tabHeaders[i].classList.add("active_2");
+          document
+            .querySelector(".tabs .tab-content > .active_2")
+            .classList.remove("active_2");
+          tabContents[i].classList.add("active_2");
+        });
+      }
+    </script>
   </body>
 </html>
