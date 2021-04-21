@@ -36,7 +36,7 @@ class DbLog:
         try:
             if(DbSensors.exist(self,deviceID)):
                 cursore = self.conn.cursor()
-                cursore.execute(f"SELECT event, whenEvent FROM {self.table} WHERE deviceID == '{deviceID}' ORDER BY whenEvent DESC")
+                cursore.execute(f"SELECT E.event, L.whenEvent FROM {self.table} L, Events E WHERE L.event == E.id AND deviceID == '{deviceID}' ORDER BY whenEvent DESC")
                 return resToDict(cursore.fetchall() , [i[0] for i in cursore.description])
             else:
                 return "Invalid deviceID"
@@ -55,7 +55,7 @@ class DbLog:
         try:
             cursore = self.conn.cursor()
             print(f"SELECT L.* FROM {self.table} L, Sensors S WHERE L.deviceID == S.dev_id AND S.mac_RSPi == '{mac}'")
-            cursore.execute(f"SELECT L.* FROM {self.table} L, Sensors S WHERE L.deviceID == S.dev_id AND S.mac_RSPi == '{mac}'")
+            cursore.execute(f"SELECT L.*, E.event FROM {self.table} L, Sensors S , Events E WHERE L.deviceID == S.dev_id AND L.event == E.id AND S.mac_RSPi == '{mac}'")
             logs = cursore.fetchall()
 
             res, name_list = logs, [i[0] for i in cursore.description]

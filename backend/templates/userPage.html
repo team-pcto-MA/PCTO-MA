@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='./css/style-welcome.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='./css/bassiStyle.css') }}"
+    />
     <link rel="stylesheet" href="../static/css/style-welcome.css" />
   </head>
   <body>
@@ -60,6 +64,15 @@
           <div class="card-text_2">
             <h3>Raspberry Id: {{a.mac}}</h3>
           </div>
+          <input
+            type="text"
+            placeholder="new name"
+            id="newName,{{a.mac}}"
+            class="p-1"
+          />
+          <button type="button" class="btn btn-outline-dark changeNameBtn">
+            Send new name
+          </button>
           <button onclick="togglePopup('{{a.mac}}')">Sensor...</button>
         </div>
       </div>
