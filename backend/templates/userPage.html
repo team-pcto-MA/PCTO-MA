@@ -28,20 +28,8 @@
         <div class="container">
           <div class="container_2" id="contenitore">
             <!--  CARD RSPI   -->
-            {% for a in rspi %}
-            <div class="card_2">
-              <img
-                src="{{ url_for('static', filename='./image/RPi-Logo-PRINT.png') }}"
-              />
-              <div class="card-body_2">
-                <div class="card-text_2">
-                  <h3>Raspberry Id: {{a.mac}}</h3>
-                </div>
-                <button onclick="togglePopup('{{a.mac}}')">Sensor...</button>
-              </div>
-            </div>
-            {% endfor %}
-            <!-- ______________________________-       -->
+
+            <!--_________________________________-->
           </div>
         </div>
       </section>
@@ -50,12 +38,6 @@
     <div id="popup">
       <div class="tabs">
         <div class="tab-header" id="sensors">
-          <div class="active_2">Sensor_1</div>
-          <div class="">Sensor_2</div>
-          <div class="">sensor_3</div>
-          <div class="">sensor_3</div>
-          <div class="">sensor_3</div>
-
           <!--qua devi aggiungere il titolo del tab!-->
         </div>
         <div class="tab-content" id="logs">
@@ -68,7 +50,21 @@
       <button id="button-close" onclick="togglePopup()">Close</button>
     </div>
 
-    <script type="text/html" id="rspi"></script>
+    <script type="text/html" id="rspi">
+      {% for a in rspi %}
+      <div class="card_2">
+        <img
+          src="{{ url_for('static', filename='./image/RPi-Logo-PRINT.png') }}"
+        />
+        <div class="card-body_2">
+          <div class="card-text_2">
+            <h3>Raspberry Id: {{a.mac}}</h3>
+          </div>
+          <button onclick="togglePopup('{{a.mac}}')">Sensor...</button>
+        </div>
+      </div>
+      {% endfor %}
+    </script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

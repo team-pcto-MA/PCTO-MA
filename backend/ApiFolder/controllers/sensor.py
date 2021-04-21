@@ -28,6 +28,7 @@ def index():
         #get all sensors
         if "mac" in request.args:
             mac = request.args['mac']
+            print(mac)
             if(RSPI.ifExists(mac)):
                 sensors = SENSOR.getAll(mac)
                 
