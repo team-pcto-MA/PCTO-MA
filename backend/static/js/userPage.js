@@ -107,8 +107,6 @@ $('#add').click(async () => {
   window.location.href = `${url.origin}/view/${user}/rspreg`;
 });
 
-$('#rspiList').click(() => {});
-
 [$('#rspiList'), $('#userInfo'), $('#add'), $('#logout')].forEach((el) => {
   el.click(() => {
     $('#contenitore').empty();
@@ -141,11 +139,24 @@ $('#rspiList').click(() => {});
   });
 });
 
-$('#userInfo').click(async () => {
-  Res = await fetch(`${url.origin}/user`);
-  res = await Res.json();
-  if (res.status != '200') {
-    alert(`Error : ${res.status}: ${res.message}`);
-  } else {
+const changeName = async (mac) => {
+  console.log('ciao');
+  console.log(`mac: ${mac}`);
+  console.log(document.getElementById(`newName,${mac}`));
+  const name = document.getElementById(`newName,${mac}`).value;
+  console.log(name);
+
+  const data = { mac: mac, name: name, ownerName: user };
+  console.log(JSON.stringify(data));
+  try {
+    let res = await fetch(`${url.origin}/RSPi/setName`, {
+      method: 'PATCH',
+      body: JSON.stringify(data),
+    });
+
+    res = await res.json();
+    console.log(res);
+  } catch (err) {
+    console.log(`error: ${err}`);
   }
-});
+};
