@@ -13,28 +13,25 @@ def index():
         if not request.args:
 
 
-            if session:
+            if 'user' in session:
                 
                     
-                try:
-                    User = DbUsers()
-                    results, fields = User.getInfo(session['user'])
-                    dictionary = {}
-                    count = 0
-                    for result in results:
-                        dictionary[f'{fields[count]}'] = result
-                        count += 1
-                    User.destroy()
-                    return jsonify({
-                        'status' : '200',
-                        'data' : dictionary
-                    })
-                except:
-                    return jsonify({
-                        'status' : '400',
-                        'message' : 'Get info error'
-                    })
+                
+                User = DbUsers()
+                
+                results, fields = User.getInfo(session['user'])
+                dictionary = {}
+                count = 0
+                for result in results:
+                    dictionary[f'{fields[count]}'] = result
+                    count += 1
                 User.destroy()
+                return jsonify({
+                    'status' : '200',
+                    'data' : dictionary
+                })
+            
+                
                 
             else:
                 return jsonify({

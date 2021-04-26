@@ -2,6 +2,7 @@ url = new URL(window.location.href);
 const vett = url.pathname.split('/');
 const user = vett[2];
 const card = $('#rspi').text();
+let userInfo = $('#userInfoHtml').text();
 
 //_______________________________________________________________________________
 
@@ -114,6 +115,26 @@ $('#rspiList').click(() => {});
     if (el.attr('id') == 'rspiList') {
       console.log(card);
       $('#contenitore').append(card);
+    } else if (el.attr('id') == 'userInfo') {
+      console.log(userInfo);
+      fetch(`${url.origin}/user`)
+        .then((res) => res.json())
+        .then((res) => {
+          console.log(res);
+          res = res.data;
+          userInfo = userInfo.replace('%username%', res.username);
+          userInfo = userInfo.replace('%name%', res.name);
+          userInfo = userInfo.replace('%surname%', res.surname);
+          userInfo = userInfo.replace('%email%', res.email);
+          userInfo = userInfo.replace(
+            '%tel%',
+            res.phone ? res.phone : 'no phone number'
+          );
+          $('#contenitore').append(userInfo);
+        })
+        .catch((err) => {
+          console.log(`Error: ${err}`);
+        });
     }
     el.attr('class', 'active');
     el.siblings().attr('class', '');
