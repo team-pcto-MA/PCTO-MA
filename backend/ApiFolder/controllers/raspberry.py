@@ -154,11 +154,13 @@ def add():
     if request.method == 'POST':
         mac = request.get_json(force = True)['mac']
         user = request.get_json(force = True)['user']
+        name = request.get_json(force = True)['name']
+        
         print(mac)
         print(user)
         RSPI = DbRSPi()
         try:
-            RSPI.addRSPi(mac, user)
+            RSPI.addRSPi(mac, user, name)
             return jsonify({
                 'status' : '200',
                 'message' : 'added new RSPi'

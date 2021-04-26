@@ -58,10 +58,10 @@ class DbRSPi:
             print(f"Error -> {Er}")
         return results,fields
 
-    def addRSPi(self,mac , user):
+    def addRSPi(self,mac , user , name):
         
         cursore = self.conn.cursor()
-        cursore.execute(f"INSERT INTO RSPi (mac , user) VALUES ('{mac}','{user}')")
+        cursore.execute(f"INSERT INTO RSPi (mac , user, name) VALUES ('{mac}','{user}', '{name}')")
         self.conn.commit()
         
 

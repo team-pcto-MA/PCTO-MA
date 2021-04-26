@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='./css/style-welcome.css') }}"
@@ -61,8 +62,14 @@
           src="{{ url_for('static', filename='./image/RPi-Logo-PRINT.png') }}"
         />
         <div class="card-body_2">
-          <div style="margin-bottom: 5px;" class="card-text_2">
-            <h3>Raspberry Id: {{a.name if a.name else a.mac}}</h3>
+          <div
+            style="margin-bottom: 5px; overflow: scroll;"
+            class="card-text_2"
+          >
+            <h3>Raspberry Id: {{a.mac}}</h3>
+            {%if a.name%}
+            <h3>Raspberry name: {{a.name}}</h3>
+            {%endif%}
           </div>
           <input
             type="text"
