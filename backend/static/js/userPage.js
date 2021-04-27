@@ -156,6 +156,7 @@ const changeName = async (mac) => {
 
     res = await res.json();
     console.log(res);
+    alert(`${res.message}`);
   } catch (err) {
     console.log(`error: ${err}`);
   }
