@@ -61,7 +61,7 @@ _We use them to create web sites._
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Agbonson Fabrizio:___
 
-<img src="documentation_img/agbonson.jpeg" width="300" height="280"/>  
+<img src="documentation_img/agbonson.jfif" width="300" height="280"/>  
 
   * _Roles:_  
     * _Front-end developer_
