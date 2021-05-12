@@ -272,6 +272,15 @@ a {
 }
 a:hover {
   text-decoration: underline;
+
+}
+@media (min-width: 480px) {
+  .card_2 {
+    margin: 0.7826086957em;
+  }
+  .car_2 img {
+    max-width: 50%;
+  }
 }
 
 @media (max-width: 1100px) {

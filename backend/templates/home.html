@@ -13,6 +13,7 @@
       type="text/css"
       href="{{ url_for('static', filename='./css/style.css') }}"
     />
+    <title>Home</title>
   </head>
 
   <body>
@@ -58,7 +59,7 @@
             <a href="/view/login" class="btn btn-lg btn-primary mx-1"
               >SIGN UP</a
             >
-            <a class="btn btn-lg mx-1 btn-outline-primary" href="#"
+            <a class="btn btn-lg mx-1 btn-outline-primary" href="https://github.com/team-pcto-MA/PROGETTO_MA"
               >LEARN MORE!</a
             >
           </div>
@@ -71,53 +72,29 @@
           <div
             class="px-md-5 p-3 d-flex flex-column justify-content-center text-center col-lg-6 bg-dark"
           >
-            <h1 class="text-primary">TITOLO</h1>
+            <h1 class="text-primary">MULTI SENSOR ALARM</h1>
             <p class="mb-3 lead text-info">
-              testo testo testo testo testo testo testo testo testo testo testo
-              testo testo testo testo testo testo testo sto testo testo testo
-              testo testo testo testo testo testo testo testo testo testo testo
-              testo testo test testo testo testo testo testo testo testo testo
-              testo testo testo testo testo testo testo testo testo testosto
-              testo testo testo testo testo testo testo testo testo testo testo
-              testo testo testo testo testo testo
+              Be Careful! <br>
+              Your security is at risk without the proper systems. <br>
+              In 2018 there was around 200k thefts in EU,
+              But...
+              We invented MA
+              a multisensor alarm to protect your flat and guarantee your safety
+              Multi sensor alarm uses some interesting technologies such as ...
+              Web app
+              You can see on pc what is happening in your flat in real time
             </p>
           </div>
           <div class="p-0 col-lg-6">
             <img
               class="img-fluid d-block"
-              src="https://static.pingendo.com/cover-moon.svg"
+              src="{{ url_for('static', filename='./image/background.png') }}"
             />
           </div>
         </div>
       </div>
     </div>
-    <div class="py-5 bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 order-2 order-md-1">
-            <img
-              class="img-fluid d-block"
-              src="https://static.pingendo.com/img-placeholder-tablet.svg"
-            />
-          </div>
-          <div
-            class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2"
-          >
-            <h1 class="text-primary">TITOLO</h1>
-            <p class="mb-3 text-light">
-              testo testo testo testo testo testo testo testo testo testo testo
-              testo testo testo testo testo testo testo&nbsp;sto testo testo
-              testo testo testo testo testo testo testo testo testo testo testo
-              testo testo testo testosto testo testo testo testo testo testo
-              testo testo testo testo testo testo testo testo testo testo
-              testosto testo testo testo testo testo testo testo testo testo
-              testo testo testo testo testo testo testo testo
-            </p>
-            <a class="btn btn-primary mb-3" href="#">Let's Go</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
     <div class="py-5 text-center bg-dark text-info">
       <div class="container">
         <div class="row">
@@ -128,10 +105,12 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 p-4">
             <img
-              class="img-fluid d-block mb-3 mx-auto rounded-circle"
-              src=" {{ url_for('static', filename='./user.svg') }}"
+              class="img-fluid d-block mb-3 mx-auto "
+              src=" {{ url_for('static', filename='./image/acchiardi.jpeg') }}"
               alt="Card image cap"
-              width="200"
+              width="200px"
+              
+              style="border-radius: 50%;height:200px"
             />
             <h4 class="text-light"><b>Acchiardi</b></h4>
             <p class="mb-0">CEO and founder</p>
@@ -141,7 +120,7 @@
               class="img-fluid d-block mb-3 mx-auto rounded-circle"
               alt="Card image cap"
               width="200"
-              src=" {{ url_for('static', filename='./user.svg') }}"
+              src=" {{ url_for('static', filename='./image/bassignana.jpeg') }}"
             />
             <h4 class="text-light"><b>Bassignana</b></h4>
             <p class="mb-0">Co-founder</p>
@@ -149,7 +128,7 @@
           <div class="col-lg-4 p-4">
             <img
               class="img-fluid d-block mb-3 mx-auto rounded-circle"
-              src=" {{ url_for('static', filename='./user.svg') }}"
+              src=" {{ url_for('static', filename='./image/agbonson.jfif') }}"
               width="200"
             />
             <h4 class="text-light"><b>Agbonson</b></h4>
@@ -200,19 +179,19 @@
             <i class="d-block fa fa-stop-circle fa-2x mr-md-5 text-primary"></i>
             <ul class="nav mx-md-auto d-flex justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" href="./new-page.html">Home</a>
+                <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="https://github.com/team-pcto-MA/PROGETTO_MA">Features</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/team-pcto-MA/PROGETTO_MA">About</a></li>
             </ul>
             <div class="row">
               <div
                 class="col-md-12 d-flex align-items-center justify-content-md-between justify-content-center my-2"
               >
-                <a href="#">
-                  <i class="fa fa-github fa-2x"></i>
+                <a href="https://github.com/team-pcto-MA/PROGETTO_MA">
+                  <i class="fa fa-github fa-2x"  ></i>
                 </a>
               </div>
             </div>
