@@ -142,6 +142,9 @@ def sendMode():
     mode = request.get_json(force = True)['mode']
     print(mac)
     print(mode)
+    RSPI = DbRSPi()
+    RSPI.changeMode(mac, mode)
+
     try:
         socketio.emit('new_mode',{'mac' : mac, 'mode' : mode})
         return 'ok'

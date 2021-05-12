@@ -28,8 +28,8 @@ def sendmail(s_id, event):
     print(f'receiver: {User.s_idToMail(s_id)}')
     context = ssl.create_default_context()
 
-    sender = "bacobas.f@gmail.com"
-    psw = "<password>"
+    sender = "server.ma002@gmail.com"
+    psw = "ciaociao1!"
     receiver = f"{User.s_idToMail(s_id)}"
     msg=f"""\
     Object: Sensor alarm {s_id} 
@@ -134,11 +134,12 @@ def insertLog():
             return 'error with database'
 
         Log.destroy()
-
+        print(f"event: {event}")
         if(Sensor.isSettedAlarm(id_s) and event!='00' and event != '08'):
             Sensor.destroy()
 
             sendmail(id_s,event)
+            print("MAIL INVIATA")
             return "alarm"
 
         else:

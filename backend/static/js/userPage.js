@@ -37,6 +37,9 @@ const sensors = async (mac) => {
               el.attr('class', 'active_2');
 
               const id_s = el.text();
+              $('#logs').append(
+                `<input type="num" style="color:black;" id="mode-set"></input> <button type="button" class="btn" onclick="sendMode('${mac}')" style="color:black;">SEND MODE</button>`
+              );
 
               fetch(`${url.origin}/log/sensorLogs`, {
                 method: 'POST',
@@ -157,6 +160,24 @@ const changeName = async (mac) => {
     res = await res.json();
     console.log(res);
     alert(`${res.message}`);
+  } catch (err) {
+    console.log(`error: ${err}`);
+  }
+};
+
+const sendMode = async (mac) => {
+  console.log(mac);
+  const data = { mac: mac, mode: $('#mode-set').val() };
+  console.log(data);
+  try {
+    let res = await fetch(`${url.origin}/RSPi/sendMode`, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+
+    res = await res.text();
+    console.log(res);
+    alert(`${res}`);
   } catch (err) {
     console.log(`error: ${err}`);
   }
