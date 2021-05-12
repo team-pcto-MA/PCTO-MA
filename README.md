@@ -61,7 +61,7 @@ _We use them to create web sites._
   * _Profile: [GitHub](https://github.com/paoloacchiardi)_
 ### ___Agbonson Fabrizio:___
 
-<img src="documentation_img/agbonson.jpeg" width="300" height="280"/>  
+<img src="documentation_img/agbonson.jfif" width="300" height="280"/>  
 
   * _Roles:_  
     * _Front-end developer_
@@ -79,7 +79,7 @@ _We use them to create web sites._
 
 ## _[RACI & WBS TABLES](https://docs.google.com/spreadsheets/d/1zHsK8yuXiTM8GkrUp1s9jzQNUywZxenSyhm5xKTKUP0/edit#gid=0)_
 
-## _WORK_
+<!--- ## _WORK_
 
 ### _Database:_
 
@@ -87,7 +87,7 @@ _ER scheme -> <img src="documentation_img/ER_scheme.PNG" width="700" height="500
 
 _Mapping -> <img src="documentation_img/mapping.PNG" width="700" height="300"/>_
 
-_Attributes Table -> <img src="documentation_img/table.PNG" width="600" height="500"/>_
+_Attributes Table -> <img src="documentation_img/table.PNG" width="600" height="500"/>_ -->
 
 ## _THANKS_
 
